@@ -4,28 +4,31 @@ header {
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    background-color: #1A2B4C;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1A2B4C;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .navbar .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 40px;
-    border-radius: 50%;
-    padding-left: 10px;
+  width: 40px;
+  border-radius: 50%;
 }
 
 .navbar h2 {
-    font-size: 1.7rem;
-    font-weight: 600;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #F7D488;
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #F7D488;
+  margin: 0;
 }
 
 .navbar .links {
@@ -89,4 +92,9 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
+    margin-right: 0;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
