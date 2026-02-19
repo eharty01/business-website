@@ -108,7 +108,7 @@
             alert("Joe's Hotdog Stand Menu\n- Hotdogs: $5.25\n- Fries: $3.75\n- Beverage: $2.50\nSpecials:\n- Meal Deal: 1 hotdog, 1 french fries, and 1 drink for $10!\n- 10% discount for any order over $30!");
         
             for (namePrice in namePrices) {
-                let namePriceQuantity = prompt(`How many ${namePrice}$ would you like?`);
+                let namePriceQuantity = prompt(`How many ${namePrice} would you like?`);
                 nameQuantities[namePrice] = namePriceQuantity;
             }
             let discount = 0;
@@ -124,7 +124,7 @@
             let subtotalPostDiscount = subtotal;
 
             /* meal deal and non-meal deal case */
-            if (numDogs == 1 && numFries == 1 && numSoda == 1) {
+            if (nameQuantities["hotdogs"] == 1 && nameQuantities["fries"] == 1 && nameQuantities["drinks"] == 1) {
                 discount = 1.50;
                 subtotal = 11.5;
                 subtotalPostDiscount = 10.00;
