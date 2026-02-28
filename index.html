@@ -23,27 +23,27 @@
         <input type='submit'>
     </form>
 
-<script>
-function checkValid() {
-      if (document.querySelector("input[name="name"]").value == "" || document.querySelector("input[name="email"]").value == "") {
-         return false;
-      } else {
-         let email = document.querySelector("input[name="email"]").value;
+    <script>
+      function checkValid() {
+        if (document.querySelector("input[name="name"]").value == "" || document.querySelector("input[name="email"]").value == "") {
+          return false;
+        } else {
+          let email = document.querySelector("input[name="email"]").value;
 
-         if (email.indexOf("@") !== -1 && email.indexOf(".") !== -1) {return true}
-         return false;
-      }
+          if (email.indexOf("@") !== -1 && email.indexOf(".") !== -1) {return true}
+          return false;
+        }
 
-  document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
+        document.querySelector('form').addEventListener('submit', function(e) {
+          e.preventDefault();
 
-    if (checkValid()) {
-      alert('form is valid');
-    } else {
-      alert('check inputs);
-  }
-} 
-</script>
+          if (checkValid()) {
+            alert('form is valid');
+          } else {
+            alert('check inputs);
+          }
+        } 
+    </script>
   
 </body>
 
